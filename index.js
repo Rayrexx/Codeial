@@ -1,13 +1,17 @@
 // Including express in our project
 const express = require('express');
+const cookieParser = require('cookie-parser');
 const app = express();
 
 //Defining port where our app will listen on
 const port = 8000;
 
+const expressLayouts = require('express-ejs-layouts');
+
 const db = require('./config/mongoose');
 
-const expressLayouts = require('express-ejs-layouts');
+app.use(express.urlencoded());
+app.use(cookieParser());
 
 //assets contains the static files of the app
 app.use(express.static('./assets'));
