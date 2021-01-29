@@ -1,6 +1,7 @@
 const User = require('../models/user');
 
 
+
 module.exports.profile = function(req, res) {
     return res.render('user_profile', {
         title: 'Profile'
@@ -60,6 +61,7 @@ module.exports.createSession = function(req, res) {
 }
 
 
+//Sign out and destroy the session
 module.exports.destroySession = function(req, res) {
     req.logout();
 
