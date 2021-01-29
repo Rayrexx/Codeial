@@ -1,0 +1,14 @@
+header {
+  background-color: #1877f2;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px; }
+  header h4 {
+    margin: 0; }
+  header a {
+    text-decoration: none;
+    color: white;
+    margin: 0 6px;
+    font-size: 20px; }
