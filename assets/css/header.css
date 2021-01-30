@@ -4,11 +4,14 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 6px; }
+  padding: 6px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
   header h4 {
     margin: 0; }
   header a {
     text-decoration: none;
     color: white;
-    margin: 0 6px;
+    margin: 0 10px;
     font-size: 20px; }
