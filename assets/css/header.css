@@ -10,8 +10,10 @@ header {
   width: 100%; }
   header h4 {
     margin: 0; }
-  header a {
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-    font-size: 20px; }
+  header .header-right-container {
+    margin-right: 15px; }
+    header .header-right-container a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      font-size: 20px; }
