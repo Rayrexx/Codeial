@@ -5,4 +5,4 @@ body {
   font-size: 28px; }
   body #layout-main {
     margin-top: 100px;
-    height: 100%; }
+    height: 100vh; }

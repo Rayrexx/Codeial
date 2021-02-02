@@ -9,7 +9,10 @@ const userController = require('../controllers/users_controller');
 const passport = require('passport');
 
 //Profile page
-router.get('/profile', passport.checkAuthentication, userController.profile);
+router.get('/profile/:id', passport.checkAuthentication, userController.profile);
+
+router.post('/update/:id', passport.checkAuthentication, userController.update);
+
 
 //Sign Up page
 router.get('/sign-up', userController.signUp);

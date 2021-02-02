@@ -13,12 +13,15 @@ header{
         margin: 0;
     }
 
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
     .header-right-container{
         margin-right: 15px;
 
         a{
-            text-decoration: none;
-            color: white;
             margin: 0 10px;
             font-size: 20px;
         }
