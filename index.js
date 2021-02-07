@@ -1,5 +1,6 @@
 // Including express in our project
 const express = require('express');
+//middleware to use cookies
 const cookieParser = require('cookie-parser');
 const app = express();
 
@@ -12,10 +13,16 @@ const db = require('./config/mongoose');
 
 //used for session cookie
 const session = require('express-session');
+
+//passport for authentication
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
+
+//to store session cookies
 const MongoStore = require('connect-mongo')(session);
+
 const sassMiddleware = require('node-sass-middleware');
+//for flash messages
 const flash = require('connect-flash');
 const customMware = require('./config/middleware');
 
@@ -27,6 +34,7 @@ app.use(sassMiddleware({
     outputStyle: 'extended',
     prefix: '/css'
 }));
+
 app.use(express.urlencoded());
 
 app.use(cookieParser());
